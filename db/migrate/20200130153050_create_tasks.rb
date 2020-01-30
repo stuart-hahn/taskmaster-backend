@@ -6,8 +6,7 @@ class CreateTasks < ActiveRecord::Migration[6.0]
       t.datetime :end
       t.boolean :interrupted
       t.integer :worktime
-      t.string :title
-      t.project :belongs_to
+      t.belongs_to :project, null: false, foreign_key: true
 
       t.timestamps
     end
