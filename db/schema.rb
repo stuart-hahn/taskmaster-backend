@@ -23,10 +23,6 @@ ActiveRecord::Schema.define(version: 2020_01_30_153050) do
 
   create_table "tasks", force: :cascade do |t|
     t.string "title"
-    t.datetime "start"
-    t.datetime "end"
-    t.boolean "interrupted"
-    t.integer "worktime"
     t.bigint "project_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

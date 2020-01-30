@@ -3,5 +3,15 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+#   movies = Movie.create([{ title: 'Star Wars' }, { title: 'Lord of the Rings' }])
+#   Character.create(title: 'Luke', movie: movies.first)
+
+
+  projects = Project.create([{ title: 'Build JS Project' }, { title: 'Write a book' }])
+  tasks = Task.create([
+        { title: 'Build JS Project Backend API', project: projects.first }, 
+        { title: 'Generate seed data for db', project: projects.first },
+        { title: 'Brainstorm book ideas', project: projects.last }
+        ])
+
+
