@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  start: 2020-01-30 10:30:50
+  end: 2020-01-30 10:30:50
+  interrupted: false
+  worktime: 1
+  title: MyString
+  belongs_to: 
+
+two:
+  title: MyString
+  start: 2020-01-30 10:30:50
+  end: 2020-01-30 10:30:50
+  interrupted: false
+  worktime: 1
+  title: MyString
+  belongs_to: 
