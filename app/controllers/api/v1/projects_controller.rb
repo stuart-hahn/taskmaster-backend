@@ -18,7 +18,7 @@ class Api::V1::ProjectsController < ApplicationController
       @project = Project.new(project_params)
   
       if @project.save
-        render json: ProjectSerializer(@project), status: :created, location: @project
+        render json: ProjectSerializer.new(@project)
       else
         render json: @project.errors, status: :unprocessable_entity
       end
