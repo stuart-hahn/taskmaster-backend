@@ -6,7 +6,6 @@
 #   movies = Movie.create([{ title: 'Star Wars' }, { title: 'Lord of the Rings' }])
 #   Character.create(title: 'Luke', movie: movies.first)
 
-
   projects = Project.create([{ title: 'Build JS Project' }, { title: 'Write a book' }])
   tasks = Task.create([
         { title: 'Build JS Project Backend API', project: projects.first }, 

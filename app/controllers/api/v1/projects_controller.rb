@@ -4,11 +4,7 @@ class Api::V1::ProjectsController < ApplicationController
     # GET /projects
     def index
       @projects = Project.all
-      options = {
-        include: [:tasks]
-      }
-  
-      render json: ProjectSerializer.new(@projects, options)
+      render json: ProjectSerializer.new(@projects)
     end
   
     # GET /projects/1
